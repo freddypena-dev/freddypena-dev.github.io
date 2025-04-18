@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Freddy Peña - Tech Management Consultant & Advisor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="custom" content="MjkwNTg5" id="snextras">
+  <link rel="icon" href="assets/images/favicon-default.png">
+  <!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap"
+    rel="stylesheet" id="sf-google-fonts">
+  <!-- Startup CSS + Bootstrap CSS (Styles for all blocks)-->
+  <link href="assets/css/styles.css" rel="stylesheet" id="sf-custom-css" />
+  <!-- Open graph settings (social networks sharing settings) -->
+  <meta name='twitter:card' content='summary_large_image'>
+  <!-- Open graph settings end -->
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="bg-bg-3 sticky-top py-4 py-lg-7">
+
+    <div class="d-block d-lg-none">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-3" data-aos="fade-down" data-aos-delay="0">
+            <a class="btn btn-width-equal-height d-lg-none rounded-circle custom-mobile-nav-btn"
+              data-bs-toggle="offcanvas" data-bs-target="#custom-id-jbovnrpf"><svg width="20" height="20"
+                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-light-1">
+                <path
+                  d="M2.00016 5.33333H14.0002C14.177 5.33333 14.3465 5.2631 14.4716 5.13807C14.5966 5.01305 14.6668 4.84348 14.6668 4.66667C14.6668 4.48986 14.5966 4.32029 14.4716 4.19526C14.3465 4.07024 14.177 4 14.0002 4H2.00016C1.82335 4 1.65378 4.07024 1.52876 4.19526C1.40373 4.32029 1.3335 4.48986 1.3335 4.66667C1.3335 4.84348 1.40373 5.01305 1.52876 5.13807C1.65378 5.2631 1.82335 5.33333 2.00016 5.33333ZM14.0002 10.6667H2.00016C1.82335 10.6667 1.65378 10.7369 1.52876 10.8619C1.40373 10.987 1.3335 11.1565 1.3335 11.3333C1.3335 11.5101 1.40373 11.6797 1.52876 11.8047C1.65378 11.9298 1.82335 12 2.00016 12H14.0002C14.177 12 14.3465 11.9298 14.4716 11.8047C14.5966 11.6797 14.6668 11.5101 14.6668 11.3333C14.6668 11.1565 14.5966 10.987 14.4716 10.8619C14.3465 10.7369 14.177 10.6667 14.0002 10.6667ZM14.0002 7.33333H2.00016C1.82335 7.33333 1.65378 7.40357 1.52876 7.5286C1.40373 7.65362 1.3335 7.82319 1.3335 8C1.3335 8.17681 1.40373 8.34638 1.52876 8.4714C1.65378 8.59643 1.82335 8.66667 2.00016 8.66667H14.0002C14.177 8.66667 14.3465 8.59643 14.4716 8.4714C14.5966 8.34638 14.6668 8.17681 14.6668 8C14.6668 7.82319 14.5966 7.65362 14.4716 7.5286C14.3465 7.40357 14.177 7.33333 14.0002 7.33333Z">
+                </path>
+              </svg></a>
+          </div>
+          <div class="col-6 text-center" data-aos="fade-down" data-aos-delay="250">
+            <a href="#"><img src="assets/images/logo-full.png" srcset="assets/images/logo-full.png 2x" alt="" class="img-fluid" data-aos="fade-down" data-aos-delay="0"></a>
+          </div>
+          <div class="col-3" data-aos="fade-down" data-aos-delay="500">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hamburger Nav -->
+    <div class="offcanvas offcanvas-start bg-bg-3" id="custom-id-jbovnrpf" aria-hidden="true">
+      <div class="offcanvas-header">
+        <a href="#top"><img src="assets/images/logo.png" srcset="assets/images/logo.png 2x" alt="" class="img-fluid"></a>
+        <a class="btn btn-sm btn-width-equal-height btn-bg-3" data-bs-dismiss="offcanvas"><svg width="24" height="24"
+            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-2">
+            <path
+              d="M8.9398 8L13.1398 3.80667C13.2653 3.68113 13.3359 3.51087 13.3359 3.33333C13.3359 3.1558 13.2653 2.98554 13.1398 2.86C13.0143 2.73447 12.844 2.66394 12.6665 2.66394C12.4889 2.66394 12.3187 2.73447 12.1931 2.86L7.9998 7.06L3.80646 2.86C3.68093 2.73447 3.51066 2.66394 3.33313 2.66394C3.1556 2.66394 2.98533 2.73447 2.8598 2.86C2.73426 2.98554 2.66374 3.1558 2.66374 3.33333C2.66374 3.51087 2.73426 3.68113 2.8598 3.80667L7.0598 8L2.8598 12.1933C2.79731 12.2553 2.74771 12.329 2.71387 12.4103C2.68002 12.4915 2.6626 12.5787 2.6626 12.6667C2.6626 12.7547 2.68002 12.8418 2.71387 12.9231C2.74771 13.0043 2.79731 13.078 2.8598 13.14C2.92177 13.2025 2.99551 13.2521 3.07675 13.2859C3.15798 13.3198 3.24512 13.3372 3.33313 13.3372C3.42114 13.3372 3.50827 13.3198 3.58951 13.2859C3.67075 13.2521 3.74449 13.2025 3.80646 13.14L7.9998 8.94L12.1931 13.14C12.2551 13.2025 12.3288 13.2521 12.4101 13.2859C12.4913 13.3198 12.5785 13.3372 12.6665 13.3372C12.7545 13.3372 12.8416 13.3198 12.9228 13.2859C13.0041 13.2521 13.0778 13.2025 13.1398 13.14C13.2023 13.078 13.2519 13.0043 13.2857 12.9231C13.3196 12.8418 13.337 12.7547 13.337 12.6667C13.337 12.5787 13.3196 12.4915 13.2857 12.4103C13.2519 12.329 13.2023 12.2553 13.1398 12.1933L8.9398 8Z">
+            </path>
+          </svg></a>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <a href="#top" class="fw-bold text-dark-1 py-2 d-inline-block">Inicio</a>
+        </div>
+        <div>
+          <a href="#services" class="fw-bold text-dark-1 py-2 d-inline-block">Servicios</a>
+        </div>
+        <div>
+          <a href="#principles" class="fw-bold text-dark-1 py-2 d-inline-block">Principios</a>
+        </div>
+        <div>
+          <a href="#work" class="fw-bold text-dark-1 py-2 d-inline-block">Sobre mí</a>
+        </div>
+        <div>
+          <a href="#contact" class="fw-bold text-dark-1 py-2 d-inline-block">Contacto</a>
+        </div>
+        <a href="https://www.linkedin.com/in/freddypena/" class="text-action-1 me-6" target="_blank"><svg width="22px" height="22px"
+            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                fill="#0F0F0F"></path>
+              <path
+                d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z"
+                fill="#0F0F0F"></path>
+              <path
+                d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z"
+                fill="#0F0F0F"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
+                fill="#0F0F0F"></path>
+            </g>
+          </svg></a>
+      </div>
+    </div>
+
+    <!-- Desktop Navbar -->
+    <div class="d-none d-lg-block">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-8">
+            <a href="#top">
+                <img src="assets/images/logo-full.png" srcset="assets/images/logo-full.png 2x" alt="" class="img-fluid me-4" data-aos="fade-down" data-aos-delay="0">
+            </a>
+            <a href="#services" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="250">Servicios</a>
+            <a href="#principles" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="250">Principios</a>
+            <a href="#work" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="250">Sobre mí</a>
+            <a href="#contact" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="250">Contacto</a>
+          </div>
+          <div class="text-end col-4" data-aos="fade-down" data-aos-delay="600">
+            <a href="https://www.linkedin.com/in/freddypena/" class="text-action-1" target="_blank">
+              <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="fill-dark-1">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                    fill="#0F0F0F"></path>
+                  <path
+                    d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z"
+                    fill="#0F0F0F"></path>
+                  <path
+                    d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z"
+                    fill="#0F0F0F"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
+                    fill="#0F0F0F"></path>
+                </g>
+              </svg></a>
+            <a href="#" class="btn btn-action-1 btn-sm rounded-2 ms-6" data-aos="fade-down" data-aos-delay="650">¡Reserva una llamada!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  <!-- Hero -->
+  <header id="top" class="border border-0 py-10 mb-lg-18">
+    <div class="container shadow border bg-bg-3 border-light-1 rounded-2 p-8">
+      <div class="row align-items-center align-items-md-center flex-md-row flex-column-reverse">
+        <div class="col-lg-6 my-8">
+          <h1 class="mb-6 display-5" data-aos="fade-down" data-aos-delay="0">Olvida la vuelta a la Ofi. Liderar equipos en remoto, sin drama, es posible.</h1>
+          <img
+            src="https://designmodo.com/startup/app/smiles.php?icon=smile&amp;search=P2lkPTM1Mzk2JmluRWRpdG9yPTE=&amp;path=L3N0YXJ0dXAvYXBwL3ByZXZpZXcucGhw&amp;e=MjkwNTg5"
+            id="js-get-smile" class="visually-hidden" style="opacity: 0.01;">
+          <p class="mb-8 fs-1" data-aos="fade-down" data-aos-delay="250">Ayudo a empresas de desarrollo de software y videojuegos a gestionar exitosamente equipos distribuidos, aportando herramientas y estrategias aplicables bajo filosofía <i>people first</i>.<br>Equipos saludables crean productos que encantan a usuarios y negocio.</p>
+          <p class="mb-8 fs-1" data-aos="fade-down" data-aos-delay="400">Trato cercano, 100% humano*, sin rodeo corporativo.</p>
+          <a href="#" class="btn btn-action-1 mb-6 btn-lg" data-aos="fade-down" data-aos-delay="750">¡Reserva una llamada gratuita!</a>
+          <p class="fs-5" data-aos="fade-down" data-aos-delay="1000">* sorry, ChatGPT</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/images/cover.jpg" srcset="assets/images/cover.jpg 2x" alt="" class="w-100 border border-light-1 rounded-1"
+            data-aos="fade-up" data-aos-delay="0">
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Fold -->
+  <section class="text-center text-lg-start bg-bg-3 mb-8">
+    <div class="container">
+      <div class="mb-8 row align-items-center justify-content-center justify-content-lg-between flex-lg-row-reverse">
+        <div class="col-lg-6 col-xl-6 mb-6">
+          <h2 class="display-6 mb-6" data-aos="fade-down" data-aos-delay="0">Mi misión es facilitar el trabajo remoto para ampliar los horizontes entre empresas y personas.</h2>
+          <p class="mb-6 fs-4 text-start" data-aos="fade-down" data-aos-delay="0">Todo buen líder merece un buen partner. Ofrezco <b>apoyo asequible y a medida</b>, con la metodología que he puesto en práctica, basada en mis 5 pilares para equipos distribuidos de alto desempeño.</p>
+        </div>
+        <div class="col-lg-5 mb-6 col-md-10">
+          <img src="assets/images/fold.jpg" srcset="assets/images/fold.jpg 2x" alt=""
+            class="img-fluid w-100 border rounded-1 border-light-1" data-aos="fade-down" data-aos-delay="0">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-center text-lg-start bg-background4 mb-8">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-sm-8 col-md-4 d-flex">
+          <div class="w-100 p-10">
+            <svg fill="#000000" height="32px" width="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 425.2 425.2" xml:space="preserve" class="mb-6">
+              <g id="SVGRepo_bgCarrier" stroke-width="0">
+              </g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+              </g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <g>
+                    <g>
+                      <path d="M218.407,88.8h12c4.4,0,8-3.6,8-8c0-4.4-3.6-8-8-8h-12c-4.4,0-8,3.6-8,8C210.407,85.2,214.007,88.8,218.407,88.8z">
+                      </path>
+                      <path d="M210.407,152.8c-22,0-40,18-40,40s18,40,40,40s40-18,40-40S232.407,152.8,210.407,152.8z M210.407,216.8 c-13.2,0-24-10.8-24-24s10.8-24,24-24s24,10.8,24,24S223.607,216.8,210.407,216.8z">
+                      </path>
+                      <path d="M354.807,415.6l-12-65.6c-3.2-17.2-13.6-31.2-28.4-39.2l-22.8-12.4c7.2-27.2,11.2-55.6,11.2-84v-10.8 c0-60.8-18.8-118.8-54.4-168.8l-18-24.8c-4.4-6.4-11.6-10-19.6-10c-7.6,0-14.8,3.6-19.6,10l-18,24.8 c-35.2,49.2-54.8,109.2-54.8,169.2v10.8c0,28.8,4,57.6,11.6,85.6l-19.2,10.4c-14.8,8-25.2,22-28.4,39.2l-12,65.2 c-0.4,3.2,0.8,6.8,4,8.4c1.2,0.8,2.8,1.2,4,1.2c2,0,3.6-0.8,5.2-2l33.6-28.8c12.8-11.2,29.6-17.2,46.8-17.2h14.4 c0.4,0,0.8,0,1.2,0c0.8,0,2,0,2.8,0h8v26c0,12,10,22,22,22s22-10,22-22v-26.4h4h0.4c1.2,0.4,2.4,0.8,3.6,0.8h18.8 c17.2,0,34,6,46.8,17.2l33.6,28.8c1.6,1.2,3.2,2,5.2,2c1.2,0,2.8-0.4,4-1.2C353.607,422.4,355.207,419.2,354.807,415.6z M106.807,382l-16.4,14.4l7.6-43.2c2.4-12.4,9.6-22.4,20.4-28l16-8.8l9.6,32c1.6,5.2,4,9.6,7.2,13.6 C134.807,364.4,119.207,371.2,106.807,382z M218.407,402.8c0,3.2-2.8,6-6,6s-6-2.8-6-6v-84c0-3.2,2.8-6,6-6s6,2.8,6,6V402.8z M238.407,360.4h-4v-41.6c0-12-10-22-22-22s-22,10-22,22v42h-8c-10.8,0-20-7.2-23.2-17.2l-12-40.4c-8.4-28.8-12.8-58.4-12.8-88.4 V204c0-39.6,8.8-79.2,25.6-115.2h30.4c4.4,0,8-3.6,8-8c0-4.4-3.6-8-8-8h-22c5.2-10,11.2-19.2,18-28.4l18-24.8 c1.6-2,4-3.2,6.4-3.2c2.8,0,4.8,1.2,6.4,3.2l18,24.8c33.6,46.8,51.2,102,51.2,159.2v10.8c0,30-4.4,60-12.8,88.4l-12,40.4 C258.407,353.6,249.207,360.4,238.407,360.4z M318.407,382.4c-13.6-11.6-30.8-18.8-48.8-20.8c3.2-4,5.6-8.4,7.2-13.6l10-33.6 l19.6,10.8c10.4,5.6,18,16,20.4,28l8,43.2L318.407,382.4z">
+                      </path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h5>Startups y Scaleups</h5>
+            <p class="my-4">Apoyo asequible y bajo demanda para fundadores y C-Levels en la gestión de equipos de hasta 20 personas</p>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-4 d-flex">
+          <div class="w-100 p-10">
+            <svg class="mb-6" fill="#000000" width="32px" height="32px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M798.071 357.531c-16.527 24.259-51.62 24.259-68.147 0-9.185-13.476-9.185-32.01 0-45.486 16.527-24.259 51.62-24.259 68.147 0 9.185 13.476 9.185 32.01 0 45.486zm93.628 92.093c-16.527 24.259-51.62 24.259-68.147 0-9.185-13.476-9.185-32.01 0-45.486 16.527-24.259 51.62-24.259 68.147 0 9.185 13.476 9.185 32.01 0 45.486zm-189.305 0c-16.527 24.259-51.62 24.259-68.147 0-9.185-13.476-9.185-32.01 0-45.486 16.527-24.259 51.62-24.259 68.147 0 9.185 13.476 9.185 32.01 0 45.486zm95.677 95.164c-16.527 24.259-51.62 24.259-68.147 0-9.185-13.476-9.185-32.01 0-45.486 16.527-24.259 51.62-24.259 68.147 0 9.185 13.476 9.185 32.01 0 45.486zM360.192 428.417c0-53.017-42.983-96-96-96s-96 42.983-96 96 42.983 96 96 96 96-42.983 96-96zm40.96 0c0 75.638-61.322 136.96-136.96 136.96s-136.96-61.322-136.96-136.96 61.322-136.96 136.96-136.96 136.96 61.322 136.96 136.96z"></path><path d="M983.038 727.533c-.352 61.995-50.737 112.151-112.843 112.151-39.998 0-76.347-20.949-96.661-54.546-5.852-9.679-18.443-12.782-28.122-6.929s-12.782 18.443-6.929 28.122c27.659 45.746 77.229 74.314 131.712 74.314 84.943 0 153.805-68.844 153.805-153.764l-1.254-19.506-40.634-281.277c-23.484-162.304-162.639-282.733-326.691-282.733H467.343c-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48h188.078c143.699 0 265.584 105.483 286.153 247.638l40.355 278.923 1.109 16.649z"></path><path d="M511.904 687.705c90.526 0 173.645 43.889 225.067 116.315 6.548 9.223 19.333 11.391 28.555 4.843s11.391-19.333 4.843-28.555c-59.025-83.133-154.528-133.562-258.465-133.562-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48zM42.071 710.884l40.355-278.923c20.569-142.154 142.454-247.638 286.153-247.638h188.078c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48H368.579c-164.052 0-303.207 120.429-326.691 282.733L1.419 705.802.045 725.519C0 811.8 68.862 880.644 153.805 880.644c54.483 0 104.053-28.568 131.712-74.314 5.852-9.679 2.75-22.27-6.929-28.122s-22.27-2.75-28.122 6.929c-20.314 33.598-56.663 54.546-96.661 54.546-62.105 0-112.491-50.155-112.843-112.151l1.109-16.649z"></path><path d="M512.096 646.745c-103.937 0-199.44 50.429-258.465 133.562-6.548 9.223-4.38 22.007 4.843 28.555s22.007 4.38 28.555-4.843c51.423-72.425 134.541-116.315 225.067-116.315 11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48z"></path></g></svg>
+            <h5>Estudios de Videojuegos Indie</h5>
+            <p class="my-4">Asesoría a Productores y Directores en proyectos con vertical slice en fase de Producción</p>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-4 d-flex">
+          <div class="w-100 p-10">
+            <svg fill="#000000" height="32px" width="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496 496" xml:space="preserve" class="mb-6">
+              <g id="SVGRepo_bgCarrier" stroke-width="0">
+              </g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+              </g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <g>
+                    <path d="M496,286.216c0-28.064-15.984-52.624-40-64.48V96c0-52.936-43.064-96-96-96c-52.936,0-96,43.064-96,96v9.456 c-10.12-1.728-20.64-1.912-31.216-0.272c-0.568,0.088-1.128,0.24-1.696,0.336C231.64,102.384,232,99.216,232,96V64 c0-12.656-9.84-23.056-22.28-23.936C193.544,15.232,165.712,0,136,0C87.48,0,48,39.48,48,88v8c0,18.28,9.128,35.352,24,45.768 v0.456c0,20.16,9.392,38.144,24,49.88v17.128L60.168,215.2C25.304,221,0,250.872,0,286.216V352h141.504 C114.264,362.696,96,388.848,96,418.912V496h304v-77.088c0-30.064-18.264-56.216-45.504-66.912H496V286.216z M280,96 c0-44.112,35.888-80,80-80s80,35.888,80,80v120.08c-1.384-0.312-2.752-0.648-4.168-0.888L400,209.224v-17.128 c14.608-11.744,24-29.72,24-49.88l-0.056-50.688L412.6,96.752C412.44,96.832,396.456,104,360,104s-52.44-7.168-52.536-7.208 L296,91.296v25.656c-5.08-2.936-10.456-5.344-16-7.312V96z M331.344,152.496c-5.2-9.128-11.784-17.12-19.344-23.896v-13.64 c9.512,2.392,25.2,5.04,48,5.04s38.488-2.648,48-5.04v27.256c0,26.472-21.528,48-48,48c-2.68,0-5.344-0.296-8-0.752V177.68 C352,165.24,343.112,154.848,331.344,152.496z M345.04,241.824C349.488,231.192,352,219.736,352,208v-2.36 c2.656,0.336,5.328,0.584,8,0.584c8.488,0,16.584-1.696,24-4.712v13.2l-24,72L345.04,241.824z M345.696,294.392l-21.912-21.912 c3.944-3.664,7.44-7.704,10.616-11.984L345.696,294.392z M397.432,225.008l12.64,2.104l5.24,26.256l-41.008,41.016 L397.432,225.008z M235.216,120.992c34.488-5.344,68.192,11.832,83.968,42.648l2.24,4.36h4.888c5.344,0,9.688,4.344,9.688,9.68 V208c0,16.512-5.824,32.448-16.008,45.136l-0.04-49.08l-11.056,4.568C308.72,208.704,290.552,216,248,216 s-60.72-7.296-60.848-7.352L176,203.872v30.696c-6.472-13.448-9.184-28.576-7.48-43.808 C172.44,155.688,200.488,126.352,235.216,120.992z M158.632,234.528c1.808,4.672,3.904,9.232,6.432,13.584l-14.112-8.472 L158.632,234.528z M136.28,230.2L112,212v-10.496c7.416,3.016,15.512,4.712,24,4.712c5.536,0,10.96-0.792,16.248-2.2 c0.216,4.864,0.736,9.688,1.672,14.424L136.28,230.2z M168.904,269.064l7.84,4.704c2.36,17.296,10.864,32.616,23.256,43.744V336 h-32.936l-6.76-54.04L168.904,269.064z M206.024,352.672l27.992,22.392l-23.592,14.16l-21.704-32.56L206.024,352.672z M216,340.152V328.4c9.656,4.816,20.496,7.6,32,7.6c11.504,0,22.344-2.776,32-7.6v11.752l-32,25.6L216,340.152z M289.976,352.664 l17.304,3.992l-21.704,32.56l-23.592-14.16L289.976,352.664z M248,320c-30.872,0-56-25.128-56-56v-37.328 c10.456,2.44,28.616,5.328,56,5.328c27.384,0,45.544-2.888,56-5.328V264C304,294.872,278.872,320,248,320z M72,91.296v28.584 c-5.088-6.808-8-15.16-8-23.88v-8c0-39.704,32.296-72,72-72c25.552,0,49.424,13.8,62.288,36.008L200.6,56h7.4c4.416,0,8,3.584,8,8 v32c0,5.016-1.008,9.904-2.88,14.608c-4.552,1.8-8.936,3.952-13.136,6.416l-0.032-25.488l-11.344,5.224 C188.44,96.832,172.456,104,136,104s-52.44-7.168-52.536-7.208L72,91.296z M88,142.216V114.96c9.512,2.392,25.2,5.04,48,5.04 s38.488-2.648,48-5.04v13.72c-16.6,14.984-28.04,35.616-31.08,58.368c-5.44,2.072-11.104,3.176-16.92,3.176 C109.528,190.216,88,168.688,88,142.216z M101.936,224.448l19.744,14.808l-22.936,13.768l-15.296-25.488L101.936,224.448z M104.936,336H64v-24H48v24H16v-49.784c0-27.496,19.68-50.728,46.792-55.24l3.696-0.616l26.768,44.616l9.84-5.904l8.592,12.888 L104.936,336z M121.056,336l7.24-57.96l-11.472-17.208L136,249.328l19.168,11.496l-11.472,17.208l7.24,57.968H121.056z M216.84,480H160v-40h-16v40h-32v-61.088c0-26.232,17.848-48.672,43.408-54.56l16.648-3.84l33.52,50.272l9.52-5.712l8.632,12.944 L216.84,480z M263.064,480h-30.12l7.336-66.016l-11.44-17.16L248,385.328l19.168,11.496l-11.44,17.16L263.064,480z M384,418.912 V480h-32v-40h-16v40h-56.84l-6.888-61.984l8.632-12.944l9.52,5.712l33.52-50.272l16.648,3.84 C366.152,370.24,384,392.68,384,418.912z M480,336h-32v-24h-16v24H296v-18.488c9.032-8.112,16-18.448,20.04-30.168L360,331.312 l72.688-72.68l-5.744-28.704l6.264,1.048c27.112,4.52,46.792,27.752,46.792,55.24V336z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h5>Trabajadores en Remoto</h5>
+            <p class="my-4">Mentorías para Developers, Artistas y cualquier Individual Contributor para desenvolverse en sus equipos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-center text-lg-start bg-bg-3 mb-8">
+    <div class="container">
+      <div class="row flex-column align-items-center text-start">
+        <div class="text-center col-sm">
+          <h4 class="mb-5">Con mi servicio de consultoría tendréis</h4>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-lg-8">
+        <div class="mb-10 col-12">
+          <div class="border-bottom border-bottom-dark-2 opacity-30">
+          </div>
+        </div>
+        <div class="mb-10 col-lg-4 mb-lg-0">
+          <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 32 32" xml:space="preserve" width="44px" height="44px" fill="" class="mb-6 fill-action-1">
+            <g id="SVGRepo_bgCarrier" stroke-width="0">
+            </g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+            </g>
+            <g id="SVGRepo_iconCarrier">
+              <style type="text/css">
+                .st0 {
+                  fill: none;
+                  stroke: #95d049;
+                  stroke-width: 2;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 10;
+                }
+              </style>
+              <polygon class="st0" points="29,12 20,12 20,3 12,3 12,12 3,12 3,20 12,20 12,29 20,29 20,20 29,20 ">
+              </polygon>
+              <polygon class="st0" points="6,16 7,16.7 7,15.3 ">
+              </polygon>
+              <polygon class="st0" points="26,16 25,16.7 25,15.3 ">
+              </polygon>
+              <polygon class="st0" points="16,26 16.7,25 15.3,25 ">
+              </polygon>
+              <polygon class="st0" points="16,6 16.7,7 15.3,7 ">
+              </polygon>
+            </g>
+          </svg>
+          <h2>Dirección</h2>
+          <h5 class="mb-4">Organización de Equipos Distribuidos</h5>
+          <p class="mb-0">¿Cómo debería ser una estructura organizativa eficaz adaptada al trabajo en remoto y en distintos husos horarios, con diferencias culturales? Os ayudo a diseñar una organización escable y a medida, con diagnóstico, herramientas y procesos, reteniendo el expertise y contratando perfiles adecuados a la cultura.
+          </p>
+        </div>
+        <div class="mb-10 col-lg-4 mb-lg-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44px" height="44px" viewBox="0 0 24 24" fill="none"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-6 stroke-action-1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M5 8l6 6"></path><path d="M4 14l6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="M22 22l-5-10-5 10"></path><path d="M14 18h6"></path></g></svg>
+          <h2>Cultura</h2>
+          <h5 class="mb-4">Equipos Seguros y Saludables</h5>
+          <p class="mb-0">Una cultura generativa con planes de carrera, gestión del desempeño basada en transparencia y comunicación constante genera confianza y fomenta la salud mental, claves para un equipo de alto desempeño. Detectemos oportunidades de mejora... ¡y lograr que tu equipo recomiende a sus ex-compis venirse a la empresa!</p>
+        </div>
+        <div class="mb-10 col-lg-4 mb-lg-0">
+          <svg fill="" height="44px" width="44px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297" xml:space="preserve"
+            class="fill-action-1 mb-6">
+            <g id="SVGRepo_bgCarrier" stroke-width="0">
+            </g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+            </g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <g>
+                  <g>
+                    <path
+                      d="M254.346,111.989l-49.35-74.027l9.08-24.553c1.3-3.514,0.516-7.46-2.026-10.211c-2.543-2.75-6.416-3.842-10.021-2.822 l-46.972,13.285c-5.602-0.049-23.111,0.631-42.332,9.436c-21.119,9.675-48.493,31.278-58.963,79.25 c-13.843,63.425-1.049,112.406,7.612,135.619h-3.346c-4.813,0-8.938,3.444-9.796,8.18l-7.091,39.123 c-0.526,2.903,0.262,5.891,2.154,8.156c1.892,2.265,4.691,3.575,7.642,3.575h177.521c3.236,0,6.271-1.573,8.135-4.217 c1.866-2.644,2.328-6.031,1.242-9.078l-13.938-39.123c-1.413-3.967-5.167-6.615-9.378-6.615h-9.627l9.087-9.087 c3.312-3.312,3.867-8.487,1.332-12.427c-10.211-15.872-33.352-54.137-44.529-80.656c2.203,0.333,4.509,0.473,6.895,0.35 c6.128-0.321,11.923-2.399,17.095-6.087l16.397,10.932c6.508,4.339,14.577,5.677,22.134,3.668 c7.559-2.008,13.901-7.171,17.399-14.167l4.264-8.528C256.565,118.768,256.329,114.961,254.346,111.989z M207.499,257.876 l6.844,19.212H62.859l3.482-19.212H207.499z M232.895,121.587c-1.294,2.587-3.5,3.508-4.7,3.827 c-1.203,0.318-3.574,0.614-5.98-0.991l-22.793-15.196c-4.125-2.751-9.648-2.045-12.949,1.654 c-4.487,5.025-9.176,6.462-15.207,4.653c-5.532-1.659-9.794-5.392-9.795-5.392c-3.077-2.796-7.565-3.384-11.259-1.479 c-3.693,1.906-5.815,5.905-5.32,10.031c3.088,25.773,36.722,81.515,49.375,101.739l-17.532,17.532h-93.86 c-6.704-15.684-24.078-65.307-9.658-131.373c16.46-75.411,79.889-73.126,82.537-73.006c1.105,0.064,2.215-0.058,3.281-0.36 l29.578-8.365l-4.049,10.949c-1.105,2.988-0.714,6.324,1.054,8.975l48.959,73.44L232.895,121.587z">
+                    </path>
+                    <path
+                      d="M171.974,55.391c-5.498,0-9.955,4.458-9.955,9.955s4.458,9.955,9.955,9.955h8.884c5.498,0,9.955-4.458,9.955-9.955 s-4.458-9.955-9.955-9.955H171.974z">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <h2>Estrategia</h2>
+          <h5 class="mb-4">Negocio y Productos</h5>
+          <p class="mb-0">No es fácil mantener el <i>“big picture”</i> cuando se está día a día solucionando problemas tácticos. Valido vuestra estrategia, dando una segunda opinión imparcial. ¿Cuál es el objetivo para los próximos 6 meses? ¿Y los próximos 2 años? ¿Estáis utilizando las tecnologías apropiadas para la madurez del equipo y midiendo los OKRs correctos?</p>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-8">
+        <div class="mb-10 col-12 d-none d-lg-block">
+          <div class="border-bottom border-bottom-dark-2 opacity-30">
+          </div>
+        </div>
+        <div class="col-lg-4 mb-10 mb-lg-0">
+          <svg width="44px" height="44px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" class="fill-action-1 mb-6">
+            <g id="SVGRepo_bgCarrier" stroke-width="0">
+            </g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+            </g>
+            <g id="SVGRepo_iconCarrier">
+              <title>
+                ship_line
+              </title>
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Transport" transform="translate(-384.000000, 0.000000)">
+                  <g id="ship_line" transform="translate(384.000000, 0.000000)">
+                    <path
+                      d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z"
+                      id="MingCute" fill-rule="nonzero">
+                    </path>
+                    <path
+                      d="M9.99988,3 C9.99988,2.44772 10.4476,2 10.9999,2 L12.9999,2 C13.5522,2 13.9999,2.44772 13.9999,3 L13.9999,4.31954 L17.3287,4.87434 C18.2931,5.03507 18.9999,5.86945 18.9999,6.84713 L18.9999,10.2792 L21.0584,10.9654 C21.7521,11.1967 22.1001,11.9715 21.812,12.6437 L19.2905,18.5273 L20.4471,19.1056 C20.9411,19.3526 21.1413,19.9532 20.8943,20.4472 C20.6473,20.9412 20.0466,21.1414 19.5527,20.8944 L16.8943,19.5652 C16.3313,19.2837 15.6685,19.2837 15.1055,19.5652 L13.7887,20.2236 C12.6626,20.7867 11.3371,20.7867 10.211,20.2236 L8.89431,19.5652 C8.33126,19.2837 7.66851,19.2837 7.10546,19.5652 L4.4471,20.8944 C3.95312,21.1414 3.35245,20.9412 3.10546,20.4472 C2.85847,19.9532 3.05869,19.3526 3.55267,19.1056 L5.38495,18.1894 L2.28294,12.7609 C1.89158,12.076 2.22463,11.2043 2.97296,10.9549 L4.99988,10.2792 L4.99988,6.84713 C4.99988,5.86945 5.70671,5.03507 6.67109,4.87434 L9.99988,4.31954 L9.99988,3 Z M7.25147,17.4247 C8.10323,17.2625 8.99546,17.3798 9.78874,17.7764 L11.1055,18.4348 C11.6685,18.7163 12.3313,18.7163 12.8943,18.4348 L14.211,17.7764 C15.2401,17.2619 16.4356,17.2175 17.4933,17.6433 L19.6526,12.605 L11.9999,10.0541 L4.47332,12.5629 L7.25147,17.4247 Z M16.9999,9.61257 L16.9999,6.84713 L11.9999,6.01379 L6.99988,6.84713 L6.99988,9.61257 L11.3674,8.15673 C11.778,8.01988 12.2218,8.01988 12.6323,8.15673 L16.9999,9.61257 Z"
+                      fill="#95d049">
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <h2>Delivery</h2>
+          <h5 class="mb-4">Producción y Operaciones</h5>
+          <p class="mb-0">Ajustar <i>frecuentemente</i> las tácticas (corto plazo) es imprescindible dentro de una buena estrategia (largo plazo), evitando la rigidez. ¿Colaboran efectivamente los desarrolladores y artistas, UI/UX, etc? ¿Logran objetivos de manera eficiente? Os ayudo a diseñar procesos flexibles, adaptados a la fase de madurez de los equipos.
+          </p>
+        </div>
+        <div class="mb-10 col-lg-4 mb-lg-0">
+          <svg fill="" height="44px" width="44px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 454 454" xml:space="preserve"
+            class="fill-action-1 mb-6">
+            <g id="SVGRepo_bgCarrier" stroke-width="0">
+            </g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+            </g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <path
+                  d="M387.514,66.486C344.639,23.612,287.634,0,227,0S109.361,23.612,66.486,66.486C23.612,109.361,0,166.366,0,227 s23.612,117.639,66.486,160.514C109.361,430.388,166.366,454,227,454s117.639-23.612,160.514-66.486 C430.388,344.639,454,287.634,454,227S430.388,109.361,387.514,66.486z M227,434c-114.141,0-207-92.859-207-207S112.859,20,227,20 s207,92.859,207,207S341.141,434,227,434z">
+                </path>
+                <path
+                  d="M227,50.677c-97.225,0-176.323,79.099-176.323,176.323S129.775,403.323,227,403.323S403.323,324.225,403.323,227 S324.225,50.677,227,50.677z M227,383.323c-86.197,0-156.323-70.126-156.323-156.323S140.803,70.677,227,70.677 S383.323,140.803,383.323,227S313.197,383.323,227,383.323z">
+                </path>
+                <path
+                  d="M227,101.354c-69.281,0-125.646,56.365-125.646,125.646c0,41.358,20.09,78.108,51.019,101.018 c0.247,0.221,0.503,0.434,0.775,0.632c0.262,0.19,0.533,0.362,0.809,0.524c20.598,14.768,45.823,23.473,73.044,23.473 c27.221,0,52.445-8.705,73.043-23.472c0.275-0.162,0.547-0.334,0.81-0.525c0.272-0.198,0.528-0.411,0.775-0.632 c30.929-22.909,51.019-59.66,51.019-101.018C352.646,157.719,296.281,101.354,227,101.354z M322.225,181.264h-61.995 l-19.161-58.971C276.89,127.081,307.091,149.882,322.225,181.264z M259.5,243.74l16.453,50.639l-43.075-31.296 c-1.753-1.273-3.815-1.91-5.878-1.91s-4.125,0.637-5.878,1.91l-43.075,31.296L194.5,243.74c1.339-4.12-0.128-8.634-3.633-11.18 l-43.076-31.297h53.245c4.332,0,8.172-2.79,9.511-6.91L227,143.715l16.453,50.639c1.339,4.12,5.179,6.91,9.511,6.91h53.245 l-43.076,31.297C259.628,235.106,258.161,239.62,259.5,243.74z M212.931,122.292l-19.161,58.971h-61.995 C146.909,149.882,177.11,127.081,212.931,122.292z M121.354,227c0-6.478,0.589-12.82,1.711-18.979l50.169,36.449l-19.143,58.917 C133.931,284.136,121.354,257.009,121.354,227z M176.854,319.967L227,283.533l50.146,36.434 c-14.928,8.084-32.01,12.68-50.146,12.68S191.782,328.051,176.854,319.967z M299.909,303.386l-19.143-58.917l50.169-36.449 c1.122,6.159,1.711,12.501,1.711,18.979C332.646,257.009,320.069,284.136,299.909,303.386z">
+                </path>
+              </g>
+            </g>
+          </svg>
+          <h2>Liderazgo</h2>
+          <h5 class="mb-4">Mentorías en Liderazgo</h5>
+          <p class="mb-0">No hay dos líderes iguales. Conoce tu estilo de liderazgo, fiel a tus principios y úsalo a tu favor. Te ayudo a gestionar mejor tu tiempo, priorizar lo importante, saber cuando decir “no” y a afrontar y resolver conflictos, por muy complicados que parezcan.</p>
+        </div>
+        <div class="col-sm-8 col-md-4" data-aos="fade-down" data-aos-delay="750">
+        </div>
+      </div>
+      <div class="row flex-column align-items-center text-start">
+        <div class="mb-10 col-12">
+          <div class="border-bottom border-bottom-dark-2 opacity-30">
+          </div>
+        </div>
+        <div class="col-sm-10 col-md-8 col-lg-6 col-xl-6 col-xxl-6 text-center">
+          <p class="mb-8 fs-3">Todo empieza con una llamada introductoria de 15 minutos sin coste</p>
+          <a href="#" class="btn btn-action-1 d-inline-flex align-items-center"><svg viewBox="0 0 24 24" width="32"
+              height="32" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-light-1 me-2">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z">
+                </path>
+              </g>
+            </svg><span>¡Reserva una llamada de exploración gratuita!</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Recommendations -->
+  <section class="py-10 text-center bg-bg-2 mb-8">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div id="recommendations" class="carousel carousel-dark slide" data-bs-interval="5000" data-bs-ride="carousel">
+            
+            <div class="carousel-indicators carousel-indicators-dots">
+              <button type="button" data-bs-target="#recommendations" data-bs-slide-to="0" class="active" aria-current="true"></button>
+              <button type="button" data-bs-target="#recommendations" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#recommendations" data-bs-slide-to="2"></button>
+            </div>
+            
+            <div class="d-flex align-items-stretch carousel-inner" style="min-height:40rem;">
+
+              <div class="float-none carousel-item active">
+                <div class="position-absolute top-0 start-0 bottom-0 end-0"></div>
+                <div class="carousel-caption top-0 bottom-0 d-flex justify-content-center align-items-center">
+                  <div>
+                    <img src="assets/images/people.png" srcset="assets/images/people.png 2x" alt="" class="rounded-circle mb-6 img-fluid" width="60em">
+                    <h5 class="mb-6">Engineering Manager | Twilio</h5>
+                    <p class="mb-6 fs-3 text-dark-2">"La mentoría de Freddy fue fundamental en mi crecimiento profesional hasta Engineering Manager. Su apoyo constante, feedback constructivo y confianza en mi potencial fueron clave en estas transiciones. Siempre me impulsó a asumir nuevas responsabilidades y me brindó los recursos y la orientación necesarios para tener éxito.</p>
+                    <p class="mb-0 fs-3 text-dark-2">Tiene una habilidad excepcional para identificar y desarrollar talento, ayudando a que muchos de sus empleados crezcan hacia roles más senior y de liderazgo."</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="float-none carousel-item">
+                <div class="position-absolute top-0 start-0 bottom-0 end-0"></div>
+                <div class="carousel-caption top-0 bottom-0 d-flex justify-content-center align-items-center">
+                  <div>
+                    <img src="assets/images/people.png" srcset="assets/images/people.png 2x" alt="" class="rounded-circle mb-6 img-fluid"  width="60em">
+                    <h5 class="mb-6">VP de Ingeniería | Twilio</h5>
+                    <p class="mb-0 text-dark-2 fs-3">"Una característica distintiva de sus equipos es su comunicación constante. Sus canales de Slack están llenos de diálogos positivos entre los miembros, donde se discuten enfoques, se comparten actualizaciones y se colabora abiertamente. Freddy ha fomentado un entorno emocionalmente seguro que ha permitido al equipo dar lo mejor de sí. Es empático y mantiene un alto estándar para su equipo. Espera resultados de calidad, y los consigue.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="float-none carousel-item">
+                <div class="position-absolute top-0 start-0 bottom-0 end-0"></div>
+                <div class="carousel-caption top-0 bottom-0 d-flex justify-content-center align-items-center">
+                  <div>
+                    <img src="assets/images/people.png" srcset="assets/images/people.png 2x" alt="" class="rounded-circle mb-6 img-fluid"  width="60em">
+                    <h5 class="mb-6">Sr. Product Manager | Twilio</h5>
+                    <p class="mb-0 text-dark-2 fs-3">"Freddy es un sólido líder de equipos, guiado por principios e integridad, con un deseo genuino de ayudar a crecer a los miembros de su equipo. Tiene excelentes habilidades de coaching y no teme tener conversaciones difíciles cuando es necesario."</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#recommendations" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#recommendations" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Services -->
+  <section class="bg-bg-3 mb-8" id="services">
+    <div class="container">
+      <p class="fs-1 text-center mb-1">¿En qué te puedo ayudar?</p>
+      <h2 class="display-5 text-center mb-12">Asesorías destacadas</h2>
+
+      <div class="row">
+        <div class="col-lg-4 mb-6 col-md-6 px-12 px-md-2">
+          <div class="overflow-hidden border rounded-1 border-Outline">
+            <a href="#" class="w-100"><img src="assets/images/services-0-3x2.jpg" srcset="assets/images/services-0-3x2.jpg 2x" alt="" class="w-100"></a>
+            <div class="p-4">
+              <div class="row">
+                <div class="mb-1">
+                  <p class="rounded-1 fs-6 fw-bold text-background4 bg-action-6 py-1 px-2 d-inline-block mb-1">¡Empieza aquí!</p>
+                </div>
+                <div class="col">
+                  <a href="#" class="font-heading text-dark-1 mb-1 fs-3">Llamada Exploratoria</a>
+                  <p class="fs-5 fw-bold mb-3">15 min</p>
+                  <p class="fs-5 mb-0">Todo empieza con una llamada para conocernos y descubrir juntos cómo puedo ayudar.</p>
+                  <a href="#" class="mt-4 d-xl-inline-block float-start fw-bold">+ Reservar gratis</a>
+                </div>
+                <div class="col-auto">
+                  <p class="font-heading text-action-1 mb-0 fs-3">Gratis</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-6 col-md-6 px-12 px-md-2">
+          <div class="overflow-hidden border border-Outline rounded-1">
+            <a href="#" class="w-100"><img src="assets/images/services-2-3x2.jpg" srcset="assets/images/services-2-3x2.jpg 2x" alt="" class="w-100"></a>
+            <div class="p-4">
+              <div class="mb-1">
+                <p class="rounded-1 fs-6 fw-bold text-background4 bg-action-2 py-1 px-2 d-inline-block mb-1">Popular</p>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#" class="font-heading text-dark-1 mb-1 fs-3">Mentoría en Liderazgo</a>
+                  <p class="fs-5 fw-bold mb-3">45 min</p>
+                  <p class="fs-5">Acompañamiento 1:1 a líderes e individuos, aportando herramientas y estrategias para lidiar con situaciones complejas.</p>
+                  <p class="fs-6 fw-bold mb-0">* Precio por sesión en pack de 4 sesiones, 196€ total. Precio sin pack: 69€.</p>
+                  <a href="#" class="mt-4 d-xl-inline-block float-start fw-bold">+ Consultar</a>
+                </div>
+                <div class="col-auto">
+                  <p class="font-heading text-action-1 mb-0 fs-3">49€ *</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-6 col-md-6 px-12 px-md-2">
+          <div class="overflow-hidden border border-Outline rounded-1">
+            <a href="#" class="w-100"><img src="assets/images/services-1-3x2.jpg" srcset="assets/images/services-1-3x2.jpg 2x" alt="" class="w-100"></a>
+            <div class="p-4">
+              <div class="row">
+                <div class="col">
+                  <a href="#" class="font-heading text-dark-1 mb-1 fs-3">Auditoría de equipos remotos</a>
+                  <p class="fs-5 mb-3 fw-bold">2 horas</p>
+                  <p class="fs-5 mb-0">Diagnóstico y optimización de la comunicación, clima, procesos y estrategia de equipos.</p>
+                  <a href="#" class="mt-4 d-xl-inline-block float-start fw-bold">+ Consultar</a>
+                </div>
+                <div class="col-auto">
+                  <p class="font-heading text-action-1 mb-0  fs-3">249€</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-8">
+        <div class="col-lg-4 mb-6 col-md-6 px-12 px-md-2">
+          <div class="overflow-hidden border rounded-1 border-Outline">
+            <a href="#" class="w-100"><img src="assets/images/services-6-3x2.jpg" srcset="assets/images/services-6-3x2.jpg 2x" alt="" class="w-100"></a>
+            <div class="p-4">
+              <div class="row">
+                <div class="col">
+                  <a href="#" class="font-heading text-dark-1 mb-1 fs-3">Formación para equipos distribuidos</a>
+                  <p class="fs-5 mb-0">Workshops sobre comunicación efectiva, manejo del tiempo, cultura de feedback, gestión del desempeño y más.</p>
+                  <a href="#" class="mt-4 d-xl-inline-block float-start fw-bold">+ Consultar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-6 col-md-6 px-12 px-md-2">
+          <div class="overflow-hidden border rounded-1 border-Outline">
+            <a href="#" class="w-100"><img src="assets/images/services-5-3x2.jpg" srcset="assets/images/services-5-3x2.jpg 2x" alt="" class="w-100"></a>
+            <div class="p-4">
+              <div class="row">
+                <div class="col">
+                  <a href="#" class="font-heading text-dark-1 mb-1 fs-3">Acompañamiento contínuo</a>
+                  <p class="fs-5 mb-0">Packs de horas mensuales para integrarme de manera regular en el equipo durante un tiempo determinado.</p>
+                  <a href="#" class="mt-4 d-xl-inline-block float-start fw-bold">+ Consultar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="accordion accordion-flush border-top border-Outline mb-6" id="faq">
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#accordion_collapse_1" >Me gustaría que hablemos antes de reservar, ¿es posible?</button>
+          </div>
+          <div id="accordion_collapse_1" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body text-start">
+              <p>¡Por supuesto! Si es la primera vez que hablamos, deberás reservar una llamada exploratoria gratuita para conocernos y evaluar el caso.</p>
+              <p class="mb-0">Tras esta llamada, proveeré de un enlace para reservar la sesión que sea más conveniente.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#accordion_collapse_2">¿Cómo es trabajar contigo?</button>
+          </div>
+          <div id="accordion_collapse_2" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body text-start">
+              <p>Antes de cada reunión pediré una breve explicación de los temas a abordar para prepararme y aprovechar bien el tiempo.</p>
+              <ul>
+                <li>En <strong>mentorías</strong>, te guiaré con preguntas que te permitirán descubrir las soluciones más apropiadas, y cuando lo necesites, te daré estrategias para abordar cada situación, siempre respetando tu estilo individual.</li>
+                <li>En <strong>auditorías de equipo</strong>, os pediré información básica para entender vuestros procesos y retos. Una vez que tenga un panorama (generalmente con 1h de reunión), os ofreceré las herramientas y ajustes que considere necesarios. Al final de cada reunión os enviaré una minuta con una lista de acciones aplicables, material de apoyo y seguimiento.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#accordion_collapse_3">¿Cuántas personas pueden estar en la reunión?</button>
+          </div>
+          <div id="accordion_collapse_3" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body text-start">
+              <ul>
+                <li><strong>Mentorías:</strong> individual</li>
+                <li><strong>Auditorías:</strong> 3 personas máx</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#accordion_collapse_4">Necesito más tiempo, ¿puedo reservar varias llamadas?</button>
+          </div>
+          <div id="accordion_collapse_4" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body text-start">
+              <p class="mb-0">Por lo general, te indicaré la frecuencia recomendada para vernos, ya que dependerá de cada situación individual.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row justify-content-center">
+        <div class="col-md-8 mb-6">
+          <small><i>Por motivos éticos, no trabajo con proyectos relacionados con criptos ni IAs que no sean responsables con el medio ambiente o no respeten a los derechos de autores de contenidos.</i></small>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- Work -->
+  <section id="work" class="py-10 py-lg-20 text-center mb-8 bg-background4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-9">
+          <p class="fs-1 text-center mb-1">¿Por qué confiar en mí?</p>
+          <h2 class="display-5 mb-6">Mi trayectoria</h2>
+          <p class="fs-4">A lo largo de mi carrera he tenido la suerte de desempeñar diversos roles en empresas de distintos sectores en LATAM y Europa, como empleado y emprendedor. Desde corporaciones internacionales, consultoras digitales, agencias de desarrollo y startups de videojuegos educativos, hasta Silicon Valley.</p>
+          <p class="fs-4 mb-md-15 mb-8">En Twilio tuve el privilegio de liderar equipos 100% remotos, colaborando en 3 zonas horarias entre EE.UU y Europa.</p>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center text-start">
+        <div class="text-start col-lg-6">
+          <div class="mb-12">
+            <div class="row border-dark-3">
+              <div class="col-4 text-end">
+                <h5 class="text-action-1">Presente</h5>
+                <h6 class="text-action-1">|</h6>
+                <h6 class="text-action-1">2025</h6>
+              </div>
+              <div class="col-8">
+                <h6 class="text-uppercase text-dark-2">Tech Management Consultant & Advisor</h6>
+                <h4>freddypena.co</h4>
+              </div>
+            </div>
+          </div>
+          <div class="mb-12">
+            <div class="row border-dark-3">
+              <div class="col-4 text-end">
+                <h5 class="text-action-1">2024</h5>
+                <h6 class="text-action-1">|</h6>
+                <h6 class="text-action-1">2019</h6>
+              </div>
+              <div class="col-8">
+                <h6 class="text-uppercase text-dark-2">Director of Engineering</h6>
+                <h4>Twilio</h4>
+              </div>
+            </div>
+          </div>
+          <div class="mb-12">
+            <div class="row">
+              <div class="col-4 text-end">
+                <h5 class="text-action-1">2019</h5>
+                <h6 class="text-action-1">|</h6>
+                <h6 class="text-action-1">2017</h6>
+              </div>
+              <div class="col-8">
+                <h6 class="text-uppercase text-dark-2">Tech Lead</h6>
+                <h4>Lingokids</h4>
+              </div>
+            </div>
+          </div>
+          <div class="mb-12">
+            <div class="row">
+              <div class="col-4 text-end">
+                <h5 class="text-action-1">2017</h5>
+                <h6 class="text-action-1">|</h6>
+                <h6 class="text-action-1">2013</h6>
+              </div>
+              <div class="col-8">
+                <h6 class="text-uppercase text-dark-2">Software Architect</h6>
+                <h4>VML The Cocktail</h4>
+              </div>
+            </div>
+          </div>
+          <div class="mb-12">
+            <div class="row">
+              <div class="col-4 text-end">
+                <h5 class="text-action-1">2013</h5>
+                <h6 class="text-action-1">|</h6>
+                <h6 class="text-action-1">2009</h6>
+              </div>
+              <div class="col-8">
+                <h6 class="text-uppercase text-dark-2">Web Developer &amp; Team Lead</h6>
+                <h4>ICA2 Innovación y Tecnología</h4>
+              </div>
+            </div>
+          </div>
+          <div class="mb-12">
+            <div class="row">
+              <div class="col-4 text-end">
+                <h5 class="text-action-1">2009</h5>
+                <h6 class="text-action-1">|</h6>
+                <h6 class="text-action-1">2007</h6>
+              </div>
+              <div class="col-8">
+                <h6 class="text-uppercase text-dark-2">Co-owner, Fullstack Web Developer &amp; Designer
+                </h6>
+                <h4>Web Ink</h4>
+              </div>
+            </div>
+          </div>
+          <div class="mb-12">
+            <div class="row">
+              <div class="col-4 text-end">
+                <h5 class="text-action-1">2007</h5>
+              </div>
+              <div class="col-8">
+                <h6 class="text-uppercase text-dark-2">Programmer Analyst</h6>
+                <h4>Shell Oil Company</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-sm-0 mb-15 col-10 col-sm-8 text-md-end col-md-8 col-lg-6 col-xl-5">
+          <img src="assets/images/work.jpg" srcset="assets/images/work.jpg 2x" alt="" class="border rounded-1 img-fluid vw-100">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section id="principles" class="text-center text-md-start py-10 mb-8">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="text-center col-lg-10">
+          <h2 class="mb-6 display-5">Mi Enfoque</h2>
+          <!-- <p class="mb-15 fs-2">Mi propósito — ese famoso “Ikigai” — está en la intersección entre la tecnología, el producto, las necesidades de los clientes y la salud mental de la gente que los hace.</p> -->
+        </div>
+      </div>
+      <div class="mb-15 row align-items-center flex-md-row-reverse justify-content-center">
+        <div class="mb-8 col-6 col-sm-5 col-lg-3 col-md-4">
+          <img src="assets/images/people.png" srcset="assets/images/people.png 2x" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-8">
+          <h4 class="mb-6 remove-br">La confianza en las personas se cultiva</h4>
+          <p class="mb-0 fs-4">Detrás de los buenos productos, siempre hay buenas personas. Como en los deportes, los partidos los ganan los equipos donde prima la colaboración y cada individuo conoce exactamente su rol, sus fortalezas, oportunidades, y las del resto. Donde fluye la comunicación transparente, se solucionan conflictos y se les trata como adultos, especialmente cuando las cosas no van bien. Donde existe confianza y certidumbre, se tolera el error como oportunidad de aprendizaje, y se entiende que todos tenemos días mejores y peores.</p>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center mb-15">
+        <div class="mb-8 col-7 col-sm-6 col-lg-3 col-md-4">
+          <img src="assets/images/engart.png" srcset="assets/images/engart.png 2x" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-8">
+          <h4 class="mb-6 remove-br">La ingeniería y el arte son el medio, no el fin</h4>
+          <p class="mb-0 fs-4">La mejor tecnología es la que soluciona los problemas particulares de tu organización, según el expertise y la fase de maduración de tus equipos. La mejor dirección artística es la que emociona a tus artistas, la que quieren expresar. La mejor UI/UX es la que los usuarios entienden.</p>
+        </div>
+      </div>
+      <div class="mb-15 row align-items-center flex-md-row-reverse justify-content-center">
+        <div class="mb-8 col-7 col-sm-6 col-lg-3 col-md-4">
+          <img src="assets/images/autonomy.png" srcset="assets/images/autonomy.png 2x" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-8">
+          <h4 class="mb-6 remove-br">La autonomía de los equipos impulsa la moral e identidad</h4>
+          <p class="mb-0 fs-4">En equipos distribuidos, una estructura federada donde cada equipo es su propia mini-empresa es, según mi experiencia práctica, la clave. Una organización es, fundamentalmente, un grupo de personas tomando pequeñas y grandes decisiones a diario. Has contratado gente capaz, dales la oportunidad de brillar y también de fallar, aportándoles coaching proactivo, formando más líderes — y menos jefes — que tomen decisiones y gestionen sus prioridades avanzando hacia el en las fases de madurez de equipo hasta el “Performing”, acorde al modelo Tuckman.</p>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center mb-15">
+        <div class="mb-8 col-6 col-sm-6 col-lg-3 col-md-4">
+          <img src="assets/images/objectives.png" srcset="assets/images/objectives.png 2x" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-8">
+          <h4 class="mb-6 remove-br">La motivación y productividad se consiguen estableciendo objetivos alcanzables en consenso</h4>
+          <p class="mb-0 fs-4">La productividad es directamente proporcional a la motivación individual y grupal, y éstas dependen del establecimiento y medición de objetivos que sean claros, tangibles y alcanzables, según consenso, y en la dirección correcta acorde con la estrategia propuesta por el liderazgo. Además, una estructura de apoyo y responsabilidades claras, donde expertos y juniors colaboren fácilmente, ¡es tan imprescindible como celebrar con frecuencia los logros!</p>
+        </div>
+      </div>
+      <div class="mb-15 row align-items-center flex-md-row-reverse justify-content-center">
+        <div class="mb-8 col-7 col-sm-6 col-lg-3 col-md-4">
+          <img src="assets/images/adapt.png" srcset="assets/images/adapt.png 2x" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-8">
+          <h4 class="mb-6 remove-br">Adaptación es otra manera de decir “Resiliencia”</h4>
+          <p class="mb-0 fs-4">Las tendencias. Los gustos de los clientes. Las tecnologías. El entorno macroeconómico. El equipo. La única constante es el cambio, incluso cuando las cosas están funcionando y has logrado el status quo, la mejor estrategia es la de enseñar a adaptarnos y encontrar un balance. Pocos cambios te harán obsoleto, y demasiados cambios producen ansiedad. ¿Cómo? La clave está en la comunicación, razonar el porqué, y tomar decisiones comprometidas con responsabilidades claras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-10 py-lg-20 text-center bg-background4">
+    <div class="container">
+      <div class="row align-items-center flex-md-row-reverse justify-content-center">
+        <div class="mb-8 col-lg-7">
+          <h2 class="display-5 mb-6">¿Nos tomamos un café?</h2>
+          <p class="fs-1 mb-8">Si estás en Madrid (o estoy por tu zona), ¡dame un toque!</p>
+          <div class="mb-5 text-center position-relative d-inline-block">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="top-0 start-0 position-absolute fill-action-1">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M21.5002 5H3.50024C3.10242 5 2.72089 5.15804 2.43958 5.43934C2.15828 5.72064 2.00024 6.10218 2.00024 6.5V6.82525L12.5002 13.1255L23.0002 6.82518V6.5C23.0002 6.10218 22.8422 5.72064 22.5609 5.43934C22.2796 5.15804 21.8981 5 21.5002 5ZM0.500244 7.27068C0.499919 7.25793 0.499919 7.24517 0.500244 7.23241V6.5C0.500244 5.70435 0.816315 4.94129 1.37892 4.37868C1.94153 3.81607 2.70459 3.5 3.50024 3.5H21.5002C22.2959 3.5 23.059 3.81607 23.6216 4.37868C24.1842 4.94129 24.5002 5.70435 24.5002 6.5V7.2394V7.2606V18.5C24.5002 19.2956 24.1842 20.0587 23.6216 20.6213C23.059 21.1839 22.2959 21.5 21.5002 21.5H3.50024C2.70459 21.5 1.94153 21.1839 1.37892 20.6213C0.816315 20.0587 0.500244 19.2956 0.500244 18.5V7.27068ZM23.0002 17.194V8.57474L15.7162 12.945L23.0002 17.194ZM22.9461 18.8995L14.3722 13.898L14.2482 13.8257L12.5002 14.8745L10.7519 13.8258L10.6282 13.898L2.05439 18.8994C2.12287 19.1473 2.25456 19.3756 2.43958 19.5607C2.72089 19.842 3.10242 20 3.50024 20H21.5002C21.8981 20 22.2796 19.842 22.5609 19.5607C22.7459 19.3757 22.8776 19.1473 22.9461 18.8995ZM2.00024 17.194V8.57616L9.28386 12.9452L2.00024 17.194Z">
+              </path>
+            </svg>
+            <p class="ps-10 mb-0 fs-4 text-dark-1">
+              <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="670f080b062701150203031e17020906490408">[email&#160;protected]</a>
+            </p>
+          </div>
+        </div>
+        <div class="align-self-stretch col-10 col-sm-8 col-md-8 pe-lg-12 col-lg-5">
+          <img src="assets/images/contact.jpg" srcset="assets/images/contact.jpg 2x" alt="" class="img-fluid border rounded-1">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-bg-3 pt-md-10 py-8 text-center text-lg-start">
+    <div class="container">
+      <div class="row flex-column flex-lg-row align-items-center justify-content-center">
+        <div class="mb-4 mb-lg-0 col-lg-5 order-1 order-lg-0">
+          <a href="#top" class="font-heading text-dark-1 me-4">Inicio</a>
+          <a href="#services" class="font-heading text-dark-1 mx-4">Servicios</a>
+        </div>
+        <div class="mb-4 mb-lg-0 col-lg-2 text-center order-0 order-lg-1">
+          <a href="#"><img src="assets/images/logo.png" srcset="assets/images/logo.png 2x" alt="" class="img-fluid"></a>
+        </div>
+        <div class="col-lg-5 text-lg-end order-2">
+          <a href="#" class="btn btn-action-1">¡Reserva una llamada!</a>
+        </div>
+      </div>
+      <div class="mt-10 mb-8 border-bottom border-dark-3">
+      </div>
+      <p class="text-center fs-5 mb-0">Copyright © 2025 freddypena.dev</p>
+    </div>
+  </footer>
+  <i class="br-emoji visually-hidden" data-emoji="gesture"></i>
+  
+  <!-- Bootstrap JS -->
+  <script data-cfasync="false" src="assets/js/email-decode.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS 3.0.0-beta.6 plugin JS (Animations) -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    // Init AOS plugin
+    function initAnimations(duration) {
+      if (typeof (AOS) !== 'undefined') {
+        if (!duration) { duration = 500; }
+        AOS.init({
+          easing: 'ease-out-cubic',
+          once: true,
+          offset: 50,
+          duration: duration
+        });
+      }
+    }
+
+    // document.ready section
+    document.addEventListener("DOMContentLoaded", function () {
+      initAnimations();
+    });
+  </script>
+</body>
+
+</html>
